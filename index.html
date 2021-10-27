@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+    <h1>Hello
+        <span class="title__icon"><i class="fas fa-smile-wink"></i></span>
+    </h1>
+    <p id="demo">Tôi là Ni, năm nay tôi vừa tròn 16</p>
+    <span><p id="age" onclick="textEffective()"></p></span>
+    <span>
+    <button type="button" onclick="textEffective()">Bạn muốn làm quen với tôi?</button>
+   </span>
+   <span class="img">
+    <img id="myPicture" src="./img/pic_bulboff_bongden.gif" alt="">
+</span>
+   
+
+    <span class="active__light">
+        <!-- turn on the light  -->
+        <button class="btn_active" onclick="document.getElementById('myPicture').src='./img/pic_bulbon_light.gif' ">Turn on</button>
+        <!-- turn off the light -->
+        <button class="btn_active" onclick="document.getElementById('myPicture').src='./img/pic_bulboff_bongden.gif'">Turn off </button>
+     
+    </span>
+  <h1 id="text_1">Hi lại là tôi đây!!</h1>
+  <h1 id="text_2"></h1>
+  <span>
+    <button id="btn_block"  onclick="hateMe()" > Hide Me</button>
+
+  </span>
+
+ <span> <button onclick="finished()">Tôi hiểu rồi, kết thúc đi</button></span>
+</div>
+
+ <!-- Javascrip -->
+<script>
+    alert('Rất vui được làm quen với bạn <3333')
+//    heading 
+function textEffective() {
+    document.getElementById('demo').innerHTML='hii!!!!...Rất vui được làm quen bạn mới'
+    document.getElementById('age').innerHTML='Tôi có thể giúp gì cho bạn!!'
+    
+}
+
+// 
+function hateMe(){
+    document.getElementById('text_1').style.display='none'
+    document.getElementById('text_2').innerHTML='Bạn ghét tôi ư <i class="fas fa-sad-tear"></i>'
+
+}
+ 
+function finished(){
+ document.write('Được lắm!! Bạn nhớ đấy! Chào không gặp lại luôn nha :(((')
+}
+</script>
+
+ <!-- fontAwesome -->
+ <script src="https://kit.fontawesome.com/d53fd78056.js" crossorigin="anonymous"></script>
+</body>
+</html>
