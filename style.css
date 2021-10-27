@@ -11,6 +11,24 @@
     margin: 5px 10px;
    
 }
+ /* Button Change background */
+#background{
+    position: relative;
+   
+    background-color: transparent;
+    color:rgb(195, 196, 193);
+    display: inline-block;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 0;
+    border-style: dashed;
+    
+
+}
+
+
+
+/* ======= */
 
 h1{
     margin-top: 30px;
@@ -33,7 +51,7 @@ button{
     border-radius: 12px;
     border: none;
     background-color: transparent;
-    color:#fff;
+    color: yellow;
     cursor: pointer;
     
 }
@@ -47,7 +65,7 @@ button.button{
     margin:12px 24px;
     padding:15px 30px;
     background-color: transparent;
-    color:white;
+    color:yellowgreen;
     outline: none;
     display: inline-block;
     
@@ -93,7 +111,7 @@ button.button:hover::before{
    
 }
 .btn_active:hover{
-    box-shadow:rgb(208, 119, 211) 5px 5px 5px;
+    
     background-color: rgb(172, 116, 160);
     color:#fff;
 }
@@ -102,17 +120,17 @@ span{
    display: flex;
    justify-content: center;
 }
-body{
-    background-image: url(https://www.desktopbackground.org/download/o/2012/03/06/354347_hinh-nen-iphone-5s-dep-nhat-wallpapers-for-iphone-5s_640x1136_h.jpg);
+#cover{
+    /* background-image: url(https://www.desktopbackground.org/download/o/2012/03/06/354347_hinh-nen-iphone-5s-dep-nhat-wallpapers-for-iphone-5s_640x1136_h.jpg);
     background-repeat: none;
     background-size: cover;
-    background-clip: border-box;
-    
+    background-clip: border-box; */
+     background-color:red;
+    width: 100%;
+    height: 100%;
 }
 .img{
     margin-top:20px;
     text-align: center;
-}
-.active__light{
-    
+    cursor: default;
 }
