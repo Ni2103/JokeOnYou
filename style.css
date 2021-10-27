@@ -50,7 +50,7 @@ button.button{
     color:white;
     outline: none;
     display: inline-block;
-    border-color: rgb(28, 5, 49) 5px ;
+    
     
     border-style:none;
     cursor: pointer;
@@ -80,9 +80,7 @@ button.button:hover::before{
     
 }
 
-button:hover{
-    opacity: 0.7;
-}
+
 /* tách */
 .btn_active{
     margin: 12px 28px;
