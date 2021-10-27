@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+    <title>Jokes</title>
 </head>
 <body>
     <div id="main">
@@ -15,13 +18,13 @@
     <p id="demo">Tôi là Ni, năm nay tôi vừa tròn 16</p>
     <span><p id="age" onclick="textEffective()"></p></span>
     <span>
-    <button type="button" onclick="textEffective()">Bạn muốn làm quen với tôi?</button>
+    <button class="button" type="button" onclick="textEffective()">Bạn muốn làm quen với tôi?</button>
    </span>
    <span class="img">
     <img id="myPicture" src="./img/pic_bulboff_bongden.gif" alt="">
 </span>
-   
-<p style="color: rgb(233, 233, 18); text-align: center;">Turn on  tức là bạn thích tôi và muốn tiến xa hơn!!</p>
+    <p style="color: rgb(233, 233, 18); text-align: center;">Turn on  tức là bạn thích tôi và muốn tiến xa hơn!!</p>
+
     <span class="active__light">
         <!-- turn on the light  -->
         <button class="btn_active" onclick="document.getElementById('myPicture').src='./img/pic_bulbon_light.gif' ">Turn on</button>
@@ -47,12 +50,15 @@ function textEffective() {
     document.getElementById('demo').innerHTML='hii!!!!...Rất vui được làm quen bạn mới'
     document.getElementById('age').innerHTML='Tôi có thể giúp gì cho bạn!!'
     
+    
 }
 
 // 
 function hateMe(){
     document.getElementById('text_1').style.display='none'
-    document.getElementById('text_2').innerHTML='Bạn ghét tôi ư <i class="fas fa-sad-tear"></i>'
+   let x= document.getElementById('text_2');
+   x.innerHTML='Bạn ghét tôi ư <i class="fas fa-sad-tear"></i>';
+   x.style.color='red';
 
 }
  
