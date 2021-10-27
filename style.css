@@ -42,7 +42,7 @@ button:hover{
     color: black;
 }
 
-.button{
+button.button{
     position: relative;
     margin:12px 24px;
     padding:15px 30px;
@@ -54,19 +54,19 @@ button:hover{
     
     border-style:none;
     cursor: pointer;
-    transition: color 2s ease-in 1s;
+    transition: text 2s ease-in 1s;
     font-size: 20px;
     
     
     
 }
 
-.button::before{
+button.button::before{
     content: "";
     position: absolute;
     height: 100%;
     width:0;
-    background-color: blueviolet;
+    background-color: rgb(12, 173, 60) ;
     z-index: -1;
     top:0;
     left:0;
@@ -74,9 +74,9 @@ button:hover{
     border-radius: 0.7px;
   
 }
-.button:hover::before{
+button.button:hover::before{
     width: 100%;
-    box-shadow: rgb(67, 7, 110) -10px -10px 10px;
+    
     
 }
 
